@@ -19,6 +19,8 @@ export default function PlanetNameList() {
     planetNames.map(x => {
       if(x.pl_discmethod ===e.target.value ){
         sorted_array.push(x.pl_hostname)
+      }else if(e.target.value === "all"){
+        sorted_array.push(x.pl_hostname)
       }
 
     })
@@ -55,6 +57,7 @@ export default function PlanetNameList() {
           <option value="Transit">Transit</option>
           <option value="Microlensing">Microlensing</option>
           <option value="Imaging">Imaging</option>
+          <option value="all">all</option>
         </select>
         <div className="planet-list">
             {
