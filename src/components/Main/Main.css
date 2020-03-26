@@ -9,6 +9,7 @@
   /* position: absolute; */
   background:#011627;
   color: white;
+  height:53vh;
 
 }
 .planet-list {
@@ -59,8 +60,8 @@ min-width:50px;
 .planet-data{
     padding:2%;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 680px) {
 .planet-list{
-
+  height: 30vh;
 }
   }

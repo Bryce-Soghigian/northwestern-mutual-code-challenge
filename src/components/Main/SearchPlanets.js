@@ -74,11 +74,11 @@ const SetRandom = () => {
         <input type="text" {...bind} placeholder="Search Here" className="inner" />
         </div>
         <div>
-        <input className="button" type="submit" value="Submit" onClick={CheckSubmission} className="inner"/>
+        <input  type="submit" value="Submit" onClick={CheckSubmission} className="inner"/>
         </div>
       </form>
       <div>
-      <button className = "button" className="inner"onClick={SetRandom}>Random Planet<GiPerspectiveDiceSixFacesFour/> </button>
+      <button  className="inner"onClick={SetRandom}>Random Planet<GiPerspectiveDiceSixFacesFour/> </button>
 
       </div>
       </div>
