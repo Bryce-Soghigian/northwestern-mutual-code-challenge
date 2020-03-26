@@ -9,7 +9,6 @@ function App() {
     <div className="App">
       <Nav/>
       <Route exact path="/" component={Main}/>
-      <Route exact path="/Earth"/>
     </div>
   );
 }
