@@ -29,7 +29,6 @@ const SetRandom = () => {
   };
 
   useEffect(() => {
-    console.log("submitting state", submitting);
 
     if (submitting === true ) {
       axios
@@ -37,7 +36,6 @@ const SetRandom = () => {
      `https://nasa-exoplanet-kepler-api.herokuapp.com/api/exoplanets/query?q=${search}`
         )
         .then(res => {
-          console.log(res.data, "data from pl_hostname search");
           setPlanetData(res.data);
           setSubmitting(false);
         })
@@ -74,16 +72,17 @@ const SetRandom = () => {
         <input type="text" {...bind} placeholder="Search Here" className="inner" />
         </div>
         <div>
-        <input  type="submit" value="Submit" onClick={CheckSubmission} className="inner"/>
+        <input  id="button" type="submit" value="Submit" onClick={CheckSubmission} className="inner"/>
         </div>
       </form>
       <div>
-      <button  className="inner"onClick={SetRandom}>Random Planet<GiPerspectiveDiceSixFacesFour/> </button>
+      <button  id="button" className="inner"onClick={SetRandom}>Random Planet<GiPerspectiveDiceSixFacesFour/> </button>
 
       </div>
       </div>
       <div>
-         {submitting_random?"Loading":""}
+        {submitting?"Loading...":""}
+         {submitting_random?"Loading...":""}
       </div>
       <PlanetData state={planetData} />
     </div>

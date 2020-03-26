@@ -24,25 +24,16 @@
     left:99%;
 }
 #button{
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:.7rem;
-margin:1em;
-
-height:3vh;
 border-radius:5px;
 border-style:solid;
 border-color:#61DBFB;
  background:#011627;
  color:white;
-font-family:'Changa One';
 cursor: pointer;
-min-width:50px;
 
 
 }
-.button:hover{
+#button:hover{
         background:#61DBFB;
         color:white;
         border-style:solid;
@@ -51,6 +42,16 @@ min-width:50px;
         transition:.5s;
        
 }
+.select-class{
+  border-radius:5px;
+border-style:solid;
+border-color:#61DBFB;
+ background:#011627;
+ color:white;
+cursor: pointer;
+
+}
+
 .search{
     text-align: center;
 }

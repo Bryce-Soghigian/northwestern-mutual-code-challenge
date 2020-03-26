@@ -14,9 +14,12 @@ export default function PlanetNameList() {
   const sortPlanetNames = (e) => {
     e.preventDefault();
     setSorting(true)
+
     let sorted_array = []
     planetNames.map(x => {
       if(x.pl_discmethod ===e.target.value ){
+        sorted_array.push(x.pl_hostname)
+      }else if(e.target.value === "all"){
         sorted_array.push(x.pl_hostname)
       }
 
@@ -48,12 +51,13 @@ export default function PlanetNameList() {
     return (
       <div >
         <h3>Names To Search({sortedPlanetNames.length + " planets"})</h3>
-        <select onChange={sortPlanetNames}>
+        <select className="select-class" onChange={sortPlanetNames}>
           <option>Filter By...</option>
-          <option value="Transit">Transit</option>
           <option value="Radial Velocity">Radial Velocity</option>
+          <option value="Transit">Transit</option>
           <option value="Microlensing">Microlensing</option>
           <option value="Imaging">Imaging</option>
+          <option value="all">all</option>
         </select>
         <div className="planet-list">
             {

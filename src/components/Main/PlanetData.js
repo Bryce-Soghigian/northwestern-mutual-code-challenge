@@ -14,7 +14,7 @@ export default function PlanetData(props) {
         <p>The Distance to this planets system is {props.state.st_dist? props.state.st_dist + " parsecs away":"N/A"} </p>
         
         <p>Data for this planet was last updated on {props.state.rowupdate}</p>
-      <h6>**Planets rendered below are based off of Jupiter radii </h6>
+      <h6>**Planets rendered below are just visualizations</h6>
         <div className="planet-container">
           <ThreePlanet state={props.state}/>
         </div>
