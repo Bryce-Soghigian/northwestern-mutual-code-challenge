@@ -23,7 +23,7 @@ const SetRandom = () => {
 }
   const handleSubmit = evt => {
     evt.preventDefault();
-    alert(`Searching for ${value}`);
+    // alert(`Searching for ${value}`);
     reset();
     return setSearch(value);
   };
