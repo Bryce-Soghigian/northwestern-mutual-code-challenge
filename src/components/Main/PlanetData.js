@@ -1,12 +1,12 @@
 import React from "react";
-
+import ThreePlanet from './ThreePlanet'
 export default function PlanetData(props) {
   console.log(props);
   if (props.state.length === 0) {
-    return <div>Please Enter A Valid Search To View Planet Data</div>;
+    return <div>Search A Planet Above</div>;
   } else {
     return (
-      <div>
+      <div className="planet-data">
         <p>Planet name:{props.state.pl_name}</p>
         <p>It was discovered by {props.state.pl_discmethod?props.state.pl_discmethod:"N/A"}</p>
         <p>its radus in Jupiter Radii is {props.state.pl_radj ? props.state.pl_radj:"N/A"} </p>
@@ -14,6 +14,9 @@ export default function PlanetData(props) {
         <p>The Distance to this planets system is {props.state.st_dist? props.state.st_dist + " parsecs":"N/A"} </p>
         <div className="bottom">
           Data for this planet was last updated on {props.state.rowupdate}
+        </div>
+        <div className="planet-container">
+          <ThreePlanet state={props.state}/>
         </div>
       </div>
     );
