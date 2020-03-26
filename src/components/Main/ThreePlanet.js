@@ -27,7 +27,7 @@ export default function ThreePlanet(props) {
         let textureLoader = new THREE.TextureLoader();
       
 
-        let texture_array = ['https://i.imgur.com/TjU19Pz.jpg',"https://i.imgur.com/UkLEysp.jpg",'https://i.imgur.com/AzMo9RH.jpg',"https://i.imgur.com/iUYEwOc.jpg","https://i.imgur.com/QxHasVS.jpg","https://i.imgur.com/tnBFfhT.jpg","https://i.imgur.com/xu5OXIB.jpg","https://i.imgur.com/qUzuQr6.jpg"]
+        let texture_array = ['https://i.imgur.com/TjU19Pz.jpg',"https://i.imgur.com/UkLEysp.jpg",'https://i.imgur.com/AzMo9RH.jpg',"https://i.imgur.com/iUYEwOc.jpg","https://i.imgur.com/QxHasVS.jpg","https://i.imgur.com/tnBFfhT.jpg","https://i.imgur.com/xu5OXIB.jpg","https://i.imgur.com/qUzuQr6.jpg","https://i.imgur.com/yCk1mZQ.jpg","https://i.imgur.com/xu5OXIB.jpg","https://i.imgur.com/QoPgvz9.png"]
 
             let exoplanet = createBasicPlanet({
                 surface: {
@@ -39,7 +39,7 @@ export default function ThreePlanet(props) {
                   },
                   textures: {
                     map:
-                    texture_array[4],
+                    texture_array[Math.floor(Math.random() * Math.floor(11))],
                     bumpMap:
                       ""
                   }
