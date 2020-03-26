@@ -18,7 +18,6 @@ export default function SearchPlanets() {
 
 const SetRandom = () => {
     let random_id = Math.floor(Math.random() * Math.floor(4016))
-
    setId(random_id)
     return setRandom(true)
 }
@@ -65,18 +64,28 @@ const SetRandom = () => {
 
   return (
     <div className="search-planets-container">
-        <button onClick={SetRandom}><GiPerspectiveDiceSixFacesFour/> </button>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Search:
-          <input type="text" {...bind} />
-        </label>
-        <input type="submit" value="Submit" onClick={CheckSubmission} />
+
+
+
+      <div className="search">
+      <form onSubmit={handleSubmit} className="inner">
+
+        <div>
+        <input type="text" {...bind} placeholder="Search Here" className="inner" />
+        </div>
+        <div>
+        <input className="button" type="submit" value="Submit" onClick={CheckSubmission} className="inner"/>
+        </div>
       </form>
+      <div>
+      <button className = "button" className="inner"onClick={SetRandom}>Random Planet<GiPerspectiveDiceSixFacesFour/> </button>
+
+      </div>
+      </div>
       <div>
          {submitting_random?"Loading":""}
       </div>
-      <PlanetData state={planetData}/>
+      <PlanetData state={planetData} />
     </div>
   );
 }

@@ -5,7 +5,7 @@ export default function Main() {
     return (
         <div className="main-container">
             <SearchPlanets/>
-            <PlanetNameList/>
+            <PlanetNameList id="planet-list-component"/>
         </div>
     )
 }
