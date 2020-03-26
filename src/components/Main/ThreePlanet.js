@@ -13,7 +13,6 @@ export default function ThreePlanet(props) {
         let cam_rotation = 0
         let cam_rotation_speed = 0.001;
         let cam_auto_rotation = true;
-        
         //==========Lights=============
         let light = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.6);
         light.color.setHSL(.6,.1,.6)
@@ -27,6 +26,9 @@ export default function ThreePlanet(props) {
         //=========Texture Loader for loading images========
         let textureLoader = new THREE.TextureLoader();
       
+
+        let texture_array = ['https://i.imgur.com/TjU19Pz.jpg',"https://i.imgur.com/UkLEysp.jpg",'https://i.imgur.com/AzMo9RH.jpg',"https://i.imgur.com/iUYEwOc.jpg","https://i.imgur.com/QxHasVS.jpg","https://i.imgur.com/tnBFfhT.jpg","https://i.imgur.com/xu5OXIB.jpg","https://i.imgur.com/qUzuQr6.jpg"]
+
             let exoplanet = createBasicPlanet({
                 surface: {
                   size: props.state.pl_radj || .2,
@@ -37,7 +39,7 @@ export default function ThreePlanet(props) {
                   },
                   textures: {
                     map:
-                      "https://i.imgur.com/iGN6Rd7.jpg",
+                    texture_array[4],
                     bumpMap:
                       ""
                   }
