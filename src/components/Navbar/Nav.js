@@ -1,11 +1,11 @@
 import React from 'react'
-
-
+import {Link} from 'react-router-dom'
+import './Nav.css'
  let Nav = props =>{
     return(
-        <div>
-            <h2>Nasa Exoplanet Data Exploration</h2>
-    <p></p>
+        <div className="nav-container">
+            <Link className="nav-link" to="/">Planet Exploration</Link>
+            <Link className="nav-link" to ="/photo">Space Photos</Link>
         </div>
     )
 }
