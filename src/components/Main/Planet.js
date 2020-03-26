@@ -1,9 +1,10 @@
 import React from 'react'
 
 export default function Planet(props) {
+    console.log(props,"props in planet")
     return (
         <div>
-            <p>{props.pl_name.pl_hostname}</p>
+            <p>{props.state}</p>
         </div>
     )
 }

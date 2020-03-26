@@ -8502,7 +8502,7 @@ react-dev-utils@^10.2.1:
     strip-ansi "6.0.0"
     text-table "0.2.0"
 
-react-dom@^16.13.1:
+react-dom@^16.13.0, react-dom@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.13.1.tgz#c1bd37331a0486c078ee54c4740720993b2e0e7f"
   integrity sha512-81PIMmVLnCNLO/fFOQxdQkvEq/+Hfpv24XNJfpyZhTRfO0QcmQIF/PgCa1zCOj2w1hrn12MFLyaJ/G0+Mxtfag==
@@ -8521,6 +8521,15 @@ react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-i
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-planetary@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/react-planetary/-/react-planetary-1.0.10.tgz#ca63acc232b528089aea030f5c47c71c7d3374fb"
+  integrity sha512-52IIzZzBOp8yOo8YESawYejnf+g6fzSAp3lmfelxLHLGVTpcx9M1XFatjVpTyDTCxgPoyJmHDIwJUX4ol7F4+g==
+  dependencies:
+    react "^16.13.0"
+    react-dom "^16.13.0"
+    three "^0.114.0"
 
 react-router-dom@^5.1.2:
   version "5.1.2"
@@ -8611,7 +8620,7 @@ react-scripts@3.4.1:
   optionalDependencies:
     fsevents "2.1.2"
 
-react@^16.13.1:
+react@^16.13.0, react@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
   integrity sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
@@ -9897,6 +9906,11 @@ text-table@0.2.0, text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
+
+three@^0.114.0:
+  version "0.114.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.114.0.tgz#754d08467a950ddeef06a0c645a1302b130e455a"
+  integrity sha512-3av45FxJeqYm7Rl02dfGBoqTaf2a934oUB4zMNrN8xjmASoSGeeykYoAr35+UntTdJDY/STw6CY3KuXFBWETig==
 
 throat@^4.0.0:
   version "4.1.0"
