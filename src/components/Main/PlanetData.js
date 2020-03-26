@@ -1,0 +1,22 @@
+import React from "react";
+
+export default function PlanetData(props) {
+  console.log(props);
+  if (props.state.length === 0) {
+    return <div>Please Enter A Valid Search To View Planet Data</div>;
+  } else {
+    return (
+      <div>
+        <p>Planet name:{props.state.pl_name}</p>
+        <p>It was discovered by {props.state.pl_discmethod?props.state.pl_discmethod:"N/A"}</p>
+        <p>its radus in Jupiter Radii is {props.state.pl_radj ? props.state.pl_radj:"N/A"} </p>
+        <p>It's Planet Orbital Period Value(time it takes to orbit its star in days) is {props.state.pl_orbper ? props.state.pl_orbper:"N/A"}</p>
+        <p>The Distance to this planets system is {props.state.st_dist? props.state.st_dist + " parsecs":"N/A"} </p>
+        <div className="bottom">
+          Data for this planet was last updated on {props.state.rowupdate}
+        </div>
+      </div>
+    );
+  }
+}
+

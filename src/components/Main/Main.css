@@ -1,0 +1,11 @@
+.search-planets-container{
+border: 1px 1px black;
+}
+
+.main-container{
+    display:flex;
+}
+.planet-list{
+    height: 45vh;
+    overflow: scroll;
+}
