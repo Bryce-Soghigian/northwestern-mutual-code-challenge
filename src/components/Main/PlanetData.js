@@ -9,7 +9,9 @@ export default function PlanetData(props) {
       <div>
         <p>Planet name:{props.state.pl_name}</p>
         <p>It was discovered by {props.state.pl_discmethod}</p>
-
+        <p>its radus in Jupiter Radii is {props.state.pl_radj} </p>
+        <p>It's Planet Orbital Period Value(time it takes to orbit its star) is {props.state.pl_orbper} days</p>
+        <p>The Distance to this planets system is {props.state.st_dist} parsecs</p>
         <div className="bottom">
           Data for this planet was last updated on {props.state.rowupdate}
         </div>

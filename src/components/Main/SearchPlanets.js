@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useInput } from "../custom_hooks/UseInput";
 import PlanetData from './PlanetData';
-
+import './Main.css'
 export default function SearchPlanets() {
   const { value, bind, reset } = useInput("");
   const [planetData, setPlanetData] = useState([]);
@@ -39,7 +39,7 @@ export default function SearchPlanets() {
   }, [search,submitting]);
 
   return (
-    <div>
+    <div className="search-planets-container">
       <form onSubmit={handleSubmit}>
         <label>
           Search:
