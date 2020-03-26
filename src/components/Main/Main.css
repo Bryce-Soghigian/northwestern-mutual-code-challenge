@@ -6,6 +6,6 @@ border: 1px 1px black;
     display:flex;
 }
 .planet-list{
-    height: 90vh;
+    height: 45vh;
     overflow: scroll;
 }
