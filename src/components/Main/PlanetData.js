@@ -3,7 +3,7 @@ import ThreePlanet from './ThreePlanet'
 export default function PlanetData(props) {
   console.log(props);
   if (props.state.length === 0) {
-    return <div>Search A Planet Above</div>;
+    return <div>Please submit a valid exoplanet above!</div>;
   } else {
     return (
       <div className="planet-data">
