@@ -31,7 +31,7 @@ export default function ThreePlanet(props) {
 
             let exoplanet = createBasicPlanet({
                 surface: {
-                  size: props.state.pl_radj || .2,
+                  size: props.state.pl_radj*0.8 || .2,
                   material: {
                     bumpScale: 0.000,
                     specular: new THREE.Color("grey"),

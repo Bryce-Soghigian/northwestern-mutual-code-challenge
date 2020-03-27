@@ -1,7 +1,7 @@
 .search-planets-container {
 
   border: 1px 1px black;
-  width:50vw;
+  width:50%;
 }
 
 .main-container {
@@ -14,7 +14,7 @@
 }
 .planet-list {
     background-color: #282c34;
-    width:40vw;
+    width:100%;
   height: 40vh;
   overflow: scroll;
 }
@@ -58,11 +58,40 @@ cursor: pointer;
 .inner{
     display: inline-block;
 }
+
 .planet-data{
-    padding:2%;
-}
+  padding:1%;
+  font-size:.8rem;
+  margin:0;
+
+ }
+@media screen and (max-width: 1200px) {
+
+  
+  .planet-data{
+    margin:0;
+    font-size:.8rem;
+    
+  }
+    }
 @media screen and (max-width: 680px) {
 .planet-list{
   height: 30vh;
 }
+
+.planet-data{
+  margin:0;
+  font-size:.5rem;
+}
   }
+
+  @media screen and (max-width: 450px) {
+    .planet-list{
+      height: 30vh;
+    }
+    
+    .planet-data{
+      margin:0;
+      font-size:.3rem;
+    }
+      }
